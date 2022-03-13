@@ -1,0 +1,50 @@
+html{
+	 font-family: 'Fredoka', sans-serif;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+a{
+  font-size:  300%;
+  color : hsl(0 0% 30%);
+   /*largeur de la police*/
+  text-decoration: none;
+}
+
+a:hover{
+  font-size:  310%;
+  color: hsl(0 0% 100%);
+  transition: 1s;
+  text-shadow: 2px 2px hsl(0 0% 30%);
+}
+
+.back{
+   color : hsl(0 0% 30%);
+   font-size:  100%; /*largeur de la police*/
+   text-decoration: none;
+}
+
+.back:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: hsl(0 0% 17%);
+}
+
+.cv:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #a6615c;
+}
+

@@ -1,0 +1,80 @@
+html{
+	 font-family: 'Fredoka', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+a{
+  color : hsl(0 0% 30%);
+  font-size:  300%; /*largeur de la police*/
+  text-decoration: none;
+}
+a:hover{
+  color: hsl(0 0% 100%);
+  font-size:  310%;
+  transition: 1s;
+  text-shadow: 2px 2px hsl(0 0% 30%);
+}
+
+
+.back{
+   color : hsl(0 0% 30%);
+   font-size:  100%; /*largeur de la police*/
+   text-decoration: none;
+}
+
+.back:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: hsl(0 0% 17%);
+   color : hsl(0 0% 100%);
+  text-decoration: none;
+}
+
+.eoc:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #792c3b;
+}
+
+.ggj:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #e7ba34;
+}
+
+.soundcloud:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #FE5000;
+}
+
+.drive:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #4285F4;
+}
+
+ul.no-bullets{
+  list-style-type: none;
+}
