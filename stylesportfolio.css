@@ -48,6 +48,15 @@ a:hover{
    background-color: #792c3b;
 }
 
+.sgj:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #003c4d;
+}
+
 .ggj:hover:before{
    content: '';
    position: fixed;
