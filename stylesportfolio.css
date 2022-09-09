@@ -45,7 +45,7 @@ a:hover{
    display: flex;
    top: 0; bottom: 0; left: 0; right: 0;
    z-index: -1;
-   background-color: #1b1b1b;
+   background-color: #923e2f;
 }
 
 .eoc:hover:before{
