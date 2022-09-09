@@ -39,6 +39,15 @@ a:hover{
   text-decoration: none;
 }
 
+.auuna1:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #4c4c4c;
+}
+
 .eoc:hover:before{
    content: '';
    position: fixed;
