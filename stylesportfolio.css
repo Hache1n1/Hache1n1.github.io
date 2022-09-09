@@ -39,7 +39,7 @@ a:hover{
   text-decoration: none;
 }
 
-.auuna1:hover:before{
+.philoterre:hover:before{
    content: '';
    position: fixed;
    display: flex;
