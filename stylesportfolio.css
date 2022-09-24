@@ -39,6 +39,15 @@ a:hover{
   text-decoration: none;
 }
 
+.gmtk:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #f4b46c;
+}
+
 .philoterre:hover:before{
    content: '';
    position: fixed;
