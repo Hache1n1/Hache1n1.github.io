@@ -93,15 +93,6 @@ a:hover{
    background-color: #FE5000;
 }
 
-.drive:hover:before{
-   content: '';
-   position: fixed;
-   display: flex;
-   top: 0; bottom: 0; left: 0; right: 0;
-   z-index: -1;
-   background-color: #4285F4;
-}
-
 ul.no-bullets{
   list-style-type: none;
 }
