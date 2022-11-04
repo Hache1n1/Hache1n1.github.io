@@ -22,14 +22,15 @@ a:hover{
 }
 
 
-.back{
+.special{
    color : hsl(0 0% 30%);
-   font-size:  100%; /*largeur de la police*/
+   font-size:  300%; /*largeur de la police*/
    text-decoration: none;
 }
 
-.back:hover:before{
+.special:hover:before{
    content: '';
+	 font-size:  310%;
    position: fixed;
    display: flex;
    top: 0; bottom: 0; left: 0; right: 0;
