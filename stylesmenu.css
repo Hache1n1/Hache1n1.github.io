@@ -8,8 +8,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100%;
-	transition: background-color 1s linear;
-
+  transition: background-color 1s linear;
 }
 
 a{
