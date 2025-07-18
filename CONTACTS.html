@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- TITRE -->
+  <title>CONTACTS</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet" />
+
+  <!-- CSS intégré -->
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Fredoka', sans-serif;
+      background-color: white;
+      transition: background-color 0.9s ease;
+      color: hsl(0 0% 30%);
+    }
+
+    .page-wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem 3rem;
+    }
+
+    .left {
+      flex: 1 1 300px;
+      text-align: right;
+    }
+
+    .right {
+      flex: 1 1 300px;
+      text-align: left;
+    }
+
+    .no-bullets {
+      list-style: none;
+    }
+
+    .left a.special,
+    .right a {
+      position: relative;
+      font-size: 3em;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0.05em 0;
+      padding: 0.1em 0.3em;
+      cursor: pointer;
+      transition: color 0.9s ease, font-size 0.9s ease;
+      color: hsl(0 0% 30%);
+      outline: none;
+    }
+
+    .left a.special {
+      font-size: 3.4em;
+    }
+
+    .left a.special:hover,
+    .right a:hover {
+      font-size: 3.3em;
+    }
+
+    .left a.special:focus,
+    .right a:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    @media (max-width: 1024px) {
+      .page-wrapper {
+        padding: 1.5rem 2rem;
+        gap: 1.5rem;
+      }
+      .left a.special {
+        font-size: 3em;
+      }
+      .right a {
+        font-size: 2.7em;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .page-wrapper {
+        flex-direction: column;
+        padding-top: 3rem;
+        gap: 1rem;
+      }
+      .left, .right {
+        flex: unset;
+        width: 90%;
+        text-align: center !important;
+      }
+      .left a.special {
+        font-size: 3.7em;
+      }
+      .right a {
+        font-size: 3em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    
+    <!-- MODIFIE ici le lien du nom si besoin (retour menu) -->
+    <div class="left">
+      <a href="MENU.html" class="special" data-bgcolor="#2c2c2c">
+        Hadrien<br />CASSAGNE
+      </a>
+    </div>
+
+    <nav class="right">
+      <ul class="no-bullets">
+        
+        <!-- Ajoute / modifie tes liens ici -->
+        <li>
+          <a href="mailto:hadcas@hotmail.fr" data-bgcolor="#0072C6">hadcas@hotmail.fr</a>
+        </li>
+
+        <li>
+          <a href="tel:0680338756" data-bgcolor="#25D366">06.80.33.87.56</a>
+        </li>
+
+        <li>
+          <a href="https://bit.ly/HLinkedIn" data-bgcolor="#2867b2">LinkedIn</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script>
+    // Gestion du changement de fond et de couleur de texte
+    const links = document.querySelectorAll('a[data-bgcolor]');
+    const body = document.body;
+
+    links.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        body.style.backgroundColor = link.dataset.bgcolor;
+        links.forEach(l => l.style.color = 'hsl(0 0% 30%)');
+        link.style.color = 'white';
+      });
+
+      link.addEventListener('mouseleave', () => {
+        body.style.backgroundColor = '';
+        links.forEach(l => l.style.color = 'hsl(0 0% 30%)');
+      });
+
+      link.addEventListener('click', () => {
+        body.style.backgroundColor = link.dataset.bgcolor;
+        links.forEach(l => l.style.color = 'hsl(0 0% 30%)');
+        link.style.color = 'white';
+      });
+    });
+  </script>
+</body>
+</html>
