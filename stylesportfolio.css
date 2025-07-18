@@ -41,6 +41,15 @@ a:hover{
   text-decoration: none;
 }
 
+.dom:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #904e2b;
+}
+
 .gmtk:hover:before{
    content: '';
    position: fixed;
@@ -68,13 +77,22 @@ a:hover{
    background-color: #792c3b;
 }
 
-.sgj:hover:before{
+.sgj2:hover:before{
    content: '';
    position: fixed;
    display: flex;
    top: 0; bottom: 0; left: 0; right: 0;
    z-index: -1;
    background-color: #003c4d;
+}
+
+.sgj:hover:before{
+   content: '';
+   position: fixed;
+   display: flex;
+   top: 0; bottom: 0; left: 0; right: 0;
+   z-index: -1;
+   background-color: #df7fb1;
 }
 
 .ggj:hover:before{
