@@ -3,173 +3,170 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <!-- 🔧 Change ici le titre de l’onglet de la page -->
   <title>H</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet" />
 
-  <!-- 💡 Pas besoin de fichier CSS séparé si tu gardes ce style intégré -->
   <style>
-    /* Reset */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    html, body {
-      height: 100%;
-      font-family: 'Fredoka', sans-serif;
-      background-color: white;
-      transition: background-color 0.9s ease;
-      color: hsl(0 0% 30%);
-    }
+html, body {
+  height: 100%;
+  font-family: 'Fredoka', sans-serif;
+  background-color: white;
+  transition: background-color 0.9s ease;
+  color: hsl(0 0% 43%);
+}
 
-    .page-wrapper {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      padding: 2rem 3rem;
-    }
+.page-wrapper {
+  max-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+}
 
-    .left {
-      flex: 1 1 300px;
-      text-align: right;
-    }
+.left {
+  flex: 1 1 300px;
+  text-align: right;
+}
 
-    .right {
-      flex: 1 1 300px;
-      text-align: left;
-    }
+.right {
+  flex: 1 1 300px;
+  text-align: left;
+}
 
-    .no-bullets {
-      list-style: none;
-    }
+.no-bullets {
+  list-style: none;
+}
 
-    .left a.special,
-    .right a {
-      position: relative;
-      font-size: 3em;
-      text-decoration: none;
-      display: inline-block;
-      margin: 0.05em 0;
-      padding: 0.1em 0.3em;
-      cursor: pointer;
-      transition: color 0.9s ease, font-size 0.9s ease;
-      color: hsl(0 0% 30%);
-      outline: none;
-    }
+.left a.special,
+.right a {
+  position: relative;
+  font-size: 3em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.05em 0;
+  padding: 0.1em 0.3em;
+  cursor: pointer;
+  transition: color 0.8s ease, font-size 0.8s ease;
+  color: hsl(0 0% 43%);
+  outline: none;
+}
 
-    .left a.special {
-      font-size: 3.4em;
-    }
+.left a.special {
+  font-size: 3.4em;
+}
 
-    .left a.special:hover,
-    .right a:hover {
-      font-size: 3.3em;
-    }
+.left a.special:hover,
+.right a:hover {
+  font-size: 3.3em;
+}
 
-    .left a.special:focus,
-    .right a:focus {
-      outline: none;
-      box-shadow: none;
-    }
+.left a.special:focus,
+.right a:focus {
+  outline: none;
+  box-shadow: none;
+}
 
-    @media (max-width: 1024px) {
-      .page-wrapper {
-        padding: 1.5rem 2rem;
-        gap: 1.5rem;
-      }
-      .left a.special {
-        font-size: 3em;
-      }
-      .right a {
-        font-size: 2.7em;
-      }
-    }
+/* Responsive adjustments */
 
-    @media (max-width: 768px) {
-      .page-wrapper {
-        flex-direction: column;
-        padding-top: 3rem;
-        gap: 1rem;
-      }
-      .left, .right {
-        flex: unset;
-        width: 90%;
-        text-align: center !important;
-      }
-      .left a.special {
-        font-size: 3.7em;
-      }
-      .right a {
-        font-size: 3em;
-      }
-    }
+@media (max-width: 1024px) {
+  .page-wrapper {
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .left a.special {
+    font-size: 3em;
+  }
+
+  .right a {
+    font-size: 2.7em;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .left, .right {
+    flex: unset;
+    width: 100%;
+    text-align: center;
+  }
+
+  .left a.special {
+    font-size: 2.2em;
+  }
+
+  .right a {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .left a.special {
+    font-size: 1.8em;
+  }
+
+  .right a {
+    font-size: 1.5em;
+  }
+}
   </style>
 </head>
 
 <body>
   <div class="page-wrapper">
-    
-    <!-- ✅ MODIFIE ici le lien du nom si besoin (retour menu) -->
     <div class="left">
-      <a href="index.html" class="special" data-bgcolor="#2c2c2c">
+      <a href="index.html" class="special" data-bgcolor="#6e6e6e">
         Hadrien<br />CASSAGNE
       </a>
     </div>
 
     <nav class="right">
       <ul class="no-bullets">
-        
-        <!-- ✅ Ajoute / modifie tes liens ici -->
-        <li>
-          <a href="CV_H.pdf" data-bgcolor="#2c2c2c">CV</a>
-        </li>
-
-        <li>
-          <a href="PORTFOLIO.html" data-bgcolor="#2c2c2c">Portfolio</a>
-        </li>
-
-        <li>
-          <a href="CONTACTS.html" data-bgcolor="#2c2c2c">Contacts</a>
-        </li>
-
-        <!-- 🟢 Tu peux dupliquer ce bloc <li> pour ajouter d'autres liens -->
-        <!--
-        <li>
-          <a href="autre.html" data-bgcolor="#123456">Autre lien</a>
-        </li>
-        -->
+        <li><a href="CV_H.pdf" data-bgcolor="#6e6e6e">CV</a></li>
+        <li><a href="LISTES.html" data-bgcolor="#6e6e6e">Portfolio</a></li>
+        <li><a href="CONTACTS.html" data-bgcolor="#6e6e6e">Contacts</a></li>
       </ul>
     </nav>
   </div>
 
   <script>
-    // 🎨 Gestion du changement de fond et de couleur de texte
     const links = document.querySelectorAll('a[data-bgcolor]');
     const body = document.body;
 
     links.forEach(link => {
       link.addEventListener('mouseenter', () => {
         body.style.backgroundColor = link.dataset.bgcolor;
-        links.forEach(l => l.style.color = 'hsl(0 0% 30%)');
+        links.forEach(l => l.style.color = 'hsl(0 0% 36%)');
         link.style.color = 'white';
       });
 
       link.addEventListener('mouseleave', () => {
         body.style.backgroundColor = '';
-        links.forEach(l => l.style.color = 'hsl(0 0% 30%)');
+        links.forEach(l => l.style.color = 'hsl(0 0% 36%)');
       });
 
       link.addEventListener('click', () => {
         body.style.backgroundColor = link.dataset.bgcolor;
-        links.forEach(l => l.style.color = 'hsl(0 0% 30%)');
+        links.forEach(l => l.style.color = 'hsl(0 0% 36%)');
         link.style.color = 'white';
       });
     });

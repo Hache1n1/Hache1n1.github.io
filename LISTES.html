@@ -4,16 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <!-- TITRE -->
-  <title>H - Contacts</title>
+  <title>H - PORTFOLIO</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet" />
-
-  <!-- CSS intégré -->
   <style>
-    /* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -137,35 +133,34 @@ html, body {
 
 <body>
   <div class="page-wrapper">
-    
-    <!-- MODIFIE ici le lien du nom si besoin (retour menu) -->
     <div class="left">
-      <a href="index.html" class="special" data-bgcolor="#6e6e6e">
+      <ul class="no-bullets">
+      <li>
+      <a href="index.html" class="special" data-bgcolor="#6E6E6E">
         Hadrien<br />CASSAGNE
       </a>
+      </li>
+    </ul>
     </div>
 
     <nav class="right">
       <ul class="no-bullets">
-        
-        <!-- Ajoute / modifie tes liens ici -->
         <li>
-          <a href="mailto:hadcas@hotmail.fr" data-bgcolor="#8bbde6">hadcas@hotmail.fr</a>
+          <a href="https://soundcloud.com/user-715089660/sets" data-bgcolor="#FBBF9D">Compositions</a>
         </li>
 
         <li>
-          <a href="tel:0680338756" data-bgcolor="#a6e4b2">06.80.33.87.56</a>
+          <a href="JV.html" data-bgcolor="#E1D4F9">Jeux Vidéos</a>
         </li>
 
         <li>
-          <a href="https://bit.ly/HLinkedIn" data-bgcolor="#8aaedb">LinkedIn</a>
+          <a href="SON.html" data-bgcolor="#D4F0EC">Ingé Son</a>
         </li>
       </ul>
     </nav>
   </div>
 
   <script>
-    // Gestion du changement de fond et de couleur de texte
     const links = document.querySelectorAll('a[data-bgcolor]');
     const body = document.body;
 
