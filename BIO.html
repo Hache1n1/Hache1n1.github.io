@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>H - BIO</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Fredoka', sans-serif;
+      background-color: white;
+      transition: background-color 0.9s ease;
+      color: hsl(0 0% 43%);
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem 3rem;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      flex: 1 1 300px;
+      text-align: right;
+      max-width: 500px;
+    }
+
+    .right {
+      flex: 1 1 300px;
+      max-width: 500px;
+      text-align: left;
+      animation: fadeInUp 1.2s ease-out both;
+    }
+
+    .no-bullets {
+      list-style: none;
+    }
+
+    .left a.special {
+      position: relative;
+      font-size: 3.4em;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0.05em 0;
+      padding: 0.1em 0.3em;
+      cursor: pointer;
+      transition: color 0.8s ease, font-size 0.8s ease;
+      color: hsl(0 0% 43%);
+      outline: none;
+    }
+
+    .left a.special:hover {
+      font-size: 3.3em;
+    }
+
+    .left a.special:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .bio-paragraph {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 1.5em;
+      transition: color 0.8s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .page-wrapper {
+        padding: 1.5rem 2rem;
+        gap: 1.5rem;
+      }
+
+      .left a.special {
+        font-size: 3em;
+      }
+
+      .bio-paragraph {
+        font-size: 1em;
+      }
+
+      .right {
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .page-wrapper {
+        flex-direction: column;
+        padding-top: 3rem;
+        gap: 1rem;
+      }
+
+      .left, .right {
+        flex: unset;
+        width: 90%;
+        text-align: center !important;
+        max-width: none;
+      }
+
+      .left a.special {
+        font-size: 3.7em;
+      }
+
+      .bio-paragraph {
+        font-size: 1em;
+        text-align: justify;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="left">
+      <ul class="no-bullets">
+        <li>
+          <a href="LISTES.html" class="special" data-bgcolor="#6e6e6e">< Retour</a>
+        </li>
+        <li>
+          <a href="index.html" class="special" data-bgcolor="#6e6e6e">Hadrien<br />CASSAGNE</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="right">
+      <p class="bio-paragraph">
+        Compositeur électroacoustique formé à Saint-Étienne, j’ai d’abord obtenu un Master de Réalisateur en Informatique Musicale à l’Université Jean Monnet. Dirigé par M. Laurent Pottier, ce master, dédié aux métiers développés à l’IRCAM, m’a permis d’acquérir de solides compétences en création sonore et en techniques audio avancées.
+      </p>
+      <p class="bio-paragraph">
+        En parallèle de ce cursus, j’ai développé un partenariat avec AUUNA Sound Department, au sein duquel j’ai pu mettre en pratique mes compétences sur l’ensemble de la chaîne de production sonore : technicien, chef opérateur, mixeur, mais aussi compositeur et sound designer. Ce cadre professionnel m’a ouvert à divers secteurs artistiques, notamment le jeu vidéo, le cinéma et les arts visuels.
+      </p>
+      <p class="bio-paragraph">
+        C’est au Conservatoire Massenet de Saint-Étienne que j’ai découvert la composition électroacoustique, aux côtés de M. Diego Losa, compositeur et membre du GRM à Paris. Son enseignement exigeant et sensible m’a profondément influencé. Aujourd’hui titulaire d’un DEM en électroacoustique, j’ai pu développer, grâce à son tutorat, un langage personnel aux sonorités organiques et à l’écriture immersive.
+      </p>
+      <p class="bio-paragraph">
+        Souhaitant élargir ma palette musicale, j’ai étudié l’écriture avec M. François Piguet puis M. Cédric Granelle, et suivi les cours de composition contemporaine de Mme Pascale Jakubowski, M. Christophe Maudot et Mme Raphaèle Biston. Leurs enseignements m’ont permis de développer une recherche timbrale singulière, nourrie par des concepts issus du spectralisme et d’une esthétique saturationniste encore au cœur de mes recherches actuelles.
+      </p>
+      <p class="bio-paragraph">
+        Ce parcours m’a permis de présenter mes œuvres dans divers contextes, notamment à la Cité du Design lors de la Biennale internationale "Bifurcations" en 2022, au Planétarium de Saint-Étienne en 2023 et 2024, ainsi qu’au Musée des Beaux-Arts de Lyon en 2024.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('a[data-bgcolor]');
+    const body = document.body;
+    const bioParagraphs = document.querySelectorAll('.bio-paragraph');
+
+    links.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        body.style.backgroundColor = link.dataset.bgcolor;
+        links.forEach(l => l.style.color = 'hsl(0 0% 36%)');
+        link.style.color = 'white';
+        bioParagraphs.forEach(p => p.style.color = 'white');
+      });
+
+      link.addEventListener('mouseleave', () => {
+        body.style.backgroundColor = '';
+        links.forEach(l => l.style.color = 'hsl(0 0% 43%)');
+        bioParagraphs.forEach(p => p.style.color = 'hsl(0 0% 43%)');
+      });
+
+      link.addEventListener('click', () => {
+        body.style.backgroundColor = link.dataset.bgcolor;
+        links.forEach(l => l.style.color = 'hsl(0 0% 36%)');
+        link.style.color = 'white';
+        bioParagraphs.forEach(p => p.style.color = 'white');
+      });
+    });
+  </script>
+</body>
+</html>
